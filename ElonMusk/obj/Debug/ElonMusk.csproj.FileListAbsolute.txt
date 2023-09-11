@@ -1,0 +1,7 @@
+C:\Users\Fair\Documents\Hovedforløb\H1\OOP\ElonMusk\bin\Debug\ElonMusk.exe.config
+C:\Users\Fair\Documents\Hovedforløb\H1\OOP\ElonMusk\bin\Debug\ElonMusk.exe
+C:\Users\Fair\Documents\Hovedforløb\H1\OOP\ElonMusk\bin\Debug\ElonMusk.pdb
+C:\Users\Fair\Documents\Hovedforløb\H1\OOP\ElonMusk\obj\Debug\ElonMusk.csproj.AssemblyReference.cache
+C:\Users\Fair\Documents\Hovedforløb\H1\OOP\ElonMusk\obj\Debug\ElonMusk.csproj.CoreCompileInputs.cache
+C:\Users\Fair\Documents\Hovedforløb\H1\OOP\ElonMusk\obj\Debug\ElonMusk.exe
+C:\Users\Fair\Documents\Hovedforløb\H1\OOP\ElonMusk\obj\Debug\ElonMusk.pdb
