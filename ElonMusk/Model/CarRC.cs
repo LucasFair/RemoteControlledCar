@@ -1,5 +1,6 @@
 ﻿using ElonMusk.View;
 using System;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Threading;
 
@@ -52,8 +53,32 @@ namespace ElonMusk.Model
 			CarGUI carGUI = new CarGUI();
 
 			display.DisplayDistance = 100;
-			battery.BatteryLevel = 20;
+			battery.BatteryLevel = 100;
 
+
+			if (battery.BatteryLevel == 100)
+			{
+				
+				BatteryInUse();
+				carGUI.BatteryFull();
+			}
+			else if (battery.BatteryLevel <= 40)
+			{				
+				BatteryInUse();
+				carGUI.BatteryLow();
+			}
+			else if (battery.BatteryLevel <= 10)
+			{
+				BatteryInUse();
+				carGUI.BatteryEmpty();
+			}
+		}
+
+		public void BatteryInUse()
+		{
+			CarBattery battery = new CarBattery();
+			CarDisplay display = new CarDisplay();
+			CarGUI carGUI = new CarGUI();
 
 			for (int i = 0; i < display.DisplayDistance; i++)
 			{
@@ -62,14 +87,11 @@ namespace ElonMusk.Model
 					battery.BatteryLevel -= 1;
 					if (battery.BatteryLevel > 0)
 					{
-						Console.WriteLine(battery.BatteryLevel);
+						carGUI.CarStatus(display, battery);
 						Thread.Sleep(600);  // Adds a delay by halting the process of the thread for a given time
 					}
 				}
-				else
-				{
-					carGUI.BatteryEmpty();
-				}
+
 			}
 		}
 	}

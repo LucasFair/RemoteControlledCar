@@ -2,6 +2,9 @@
 
 namespace ElonMusk.Model
 {
+	/// <summary>
+	/// Class <c>CarDisplay</c> sends data about the distance of the car.
+	/// </summary>
 	public class CarDisplay
 	{
 		private int _displayDistance;

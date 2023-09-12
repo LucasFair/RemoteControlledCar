@@ -54,10 +54,5 @@ namespace ElonMusk.View
 		{
             Console.WriteLine($"Distance driven = {display.DisplayDistance}.\nBattery = {battery.BatteryLevel}%");
         }
-
-		internal void CarStatus(CarRC carRC)
-		{
-			throw new NotImplementedException();
-		}
 	}
 }
